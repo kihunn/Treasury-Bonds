@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bond Exchange Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+          </nav>
+      </header>
+      
+
+  <main>
+    <div id="search-wrapper">
+        <input type="text" id="currency-search" placeholder="🔍 Search currency..." />
+      </div>
+      
+    <section class="controls">
+      <label for="currency-select">Select Currency:</label>
+      <select id="currency-select"></select>
+    </section>
+    
+    <section id="summary-cards" class="summary-grid"></section>
+
+
+    <div class="grid">
+      <section class="left">
+        <table id="exchange-table">
+          <thead>
+            <tr>
+              <th>Date</th>
+              <th>Rate</th>
+            </tr>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </section>
+
+      <section class="right">
+        <canvas id="exchangeChart"></canvas>
+      </section>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
